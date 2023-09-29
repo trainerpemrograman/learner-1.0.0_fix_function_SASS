@@ -1,0 +1,62 @@
+// ini custome button by rici
+@function ubah-button-bootstrap($map, $key) {
+  @return map-get($map, $key);
+}
+
+@function ubah-ukuranfont-bootstrap($map, $key) {
+  @return map-get($map, $key);
+}
+
+@function ubah-huruf($map, $key) {
+  @return map-get($map, $key);
+}
+
+// ini custome warna font by salsabila
+$warna: (
+  "primary": #6499e9,
+  "secondary": #088395,
+);
+
+$ukuran: (
+  "small": 39px,
+  "medium": 12px,
+);
+
+$jenis-font: (
+  "font1": "Noto Sans JP",
+  "font2": "Mooli",
+);
+
+.btn-secondary {
+  background-color: ubah-button-bootstrap($warna, "secondary") !important;
+}
+
+.heading {
+  font-size: ubah-ukuranfont-bootstrap($ukuran, "small") !important;
+}
+
+.heading {
+  font-family: ubah-huruf($jenis-font, "font1") !important;
+}
+
+.category:hover {
+  background-color: ubah-button-bootstrap($warna, "secondary") !important;
+}
+
+h2,
+h3 {
+  color: ubah-button-bootstrap($warna, "secondary") !important;
+}
+
+.btn-primary {
+  background-color: ubah-button-bootstrap($warna, "secondary") !important;
+}
+
+.warna-a,
+.fig {
+  color: ubah-button-bootstrap($warna, "secondary") !important;
+}
+
+.uil {
+  color: ubah-button-bootstrap($warna, "secondary") !important;
+}
