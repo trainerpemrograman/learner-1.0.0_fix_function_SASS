@@ -24,6 +24,13 @@
 @import "warna";
 @import "navigasi";
 
+@import "corner";
+
+.button {
+  @include rounded;
+  padding: 5px + $radius;
+}
+
 $primary: #136ad5;
 $secondary: #00aeff;
 $black: #000000;
@@ -189,4 +196,22 @@ h3 {
   @extend .alert1;
   text-align: center;
   color: white !important;
+}
+
+@mixin base-button($bg-color) {
+  font-family: "Fakt Soft Pro";
+  font-size: 12px;
+  border: 1px solid white !important;
+  border-radius: 10px;
+  padding: 10px 16px;
+  color: white;
+  background-color: $bg-color;
+}
+
+.btn-primary1 {
+  @include base-button(blue);
+}
+
+.btn-secondary {
+  @include base-button(#219c90);
 }

@@ -1938,6 +1938,11 @@ nav li {
   padding: 5px;
 }
 
+.button {
+  border-radius: 10px;
+  padding: 15px;
+}
+
 body {
   font: 100% Helvetica, sans-serif;
   background-color: rgb(230, 231, 233);
@@ -2058,6 +2063,26 @@ h3 {
 .alert-info1 {
   text-align: center;
   color: white !important;
+}
+
+.btn-primary1 {
+  font-family: "Fakt Soft Pro";
+  font-size: 12px;
+  border: 1px solid white !important;
+  border-radius: 10px;
+  padding: 10px 16px;
+  color: white;
+  background-color: blue;
+}
+
+.btn-secondary {
+  font-family: "Fakt Soft Pro";
+  font-size: 12px;
+  border: 1px solid white !important;
+  border-radius: 10px;
+  padding: 10px 16px;
+  color: white;
+  background-color: #219c90;
 }
 
 /*# sourceMappingURL=style.css.map */
