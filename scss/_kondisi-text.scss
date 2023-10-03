@@ -1,0 +1,18 @@
+@import "warna";
+
+@mixin pop-up($size, $is-success: false) {
+  font-size: $size;
+
+  @if $is-success {
+    color: $warna-text;
+  } @else {
+    color: $warna-text1 !important;
+  }
+}
+
+.text-1 {
+  @include pop-up(20px, $is-success: true);
+}
+.text-2 {
+  @include pop-up(15px, $is-success: false);
+}
