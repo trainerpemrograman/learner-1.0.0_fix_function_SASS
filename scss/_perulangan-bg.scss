@@ -1,0 +1,11 @@
+$types: (
+  "card1": #dafffb,
+  "card2": #9eddff,
+  "card3": #b0d9b1,
+);
+
+@each $name, $color in $types {
+  .bg-#{$name} {
+    background-color: $color;
+  }
+}

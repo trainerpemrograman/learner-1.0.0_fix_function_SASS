@@ -1,0 +1,10 @@
+$fonts: "title" #176b87 40px, "subtitle" #8ddfcb 20px, "content" black 16px;
+
+@each $name, $color, $size in $fonts {
+  .font-#{$name} {
+    color: $color;
+    font-size: $size;
+    display: inline-block;
+    padding-top: 10px;
+  }
+}

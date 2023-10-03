@@ -1,0 +1,6 @@
+@import "warna";
+@each $color in $warna-card {
+  .bg-card-#{$color} {
+    background-color: $color;
+  }
+}
